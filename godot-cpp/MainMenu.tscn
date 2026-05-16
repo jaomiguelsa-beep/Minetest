@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt1m7ywk4l2j5"]
+
+[ext_resource type="Script" path="res://MainMenu.gd" id="1_9z8c3"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_left = 0.0
+anchors_top = 0.0
+anchors_right = 1.0
+anchors_bottom = 1.0
+script = ExtResource("1_9z8c3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_left = 0.0
+anchors_top = 0.0
+anchors_right = 1.0
+anchors_bottom = 1.0
+color = Color(0.529412, 0.807843, 0.921569, 1)
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_left = 0.5
+anchors_top = 0.2
+offset_left = -150.0
+offset_top = 0.0
+offset_right = 150.0
+offset_bottom = 100.0
+text = "MINETEST"
+add_theme_font_size_override("font_size", 80)
